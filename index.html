@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users SPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<nav class="bg-white shadow mb-4">
+    <div class="container mx-auto px-6 py-3">
+        <h1 class="text-xl font-semibold">Users App</h1>
+    </div>
+</nav>
+
+<main id="app" class="container mx-auto px-4">
+    <div id="search-bar" class="mb-6">
+        <input
+                type="text"
+                placeholder="Search users.. and press enter."
+                class="w-full p-2 border rounded shadow-sm"
+                onkeyup="handleSearch(event)"
+        >
+    </div>
+    <div id="content"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
